@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+import ttkbootstrap as ttk
 
 def convert():
     miles_input = float(entry_float.get())
@@ -7,7 +7,7 @@ def convert():
     output_string.set(f"{km_output:.2f}")
 
 # Window
-window = tk.Tk()
+window = ttk.Window(themename = "cosmo")
 window.title("Demo")
 window.geometry("300x150")
 
